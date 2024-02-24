@@ -111,7 +111,7 @@
                                 <h1 class="text-white display-1 mb-2 animated fadeInRight">E - RESES</h1>
                                 <p class="mb-4 text-white fs-5 animated fadeInDown">DPRD JAKARTA DAPIL 8 - JAKARTA SELATAN</p>
                                 <!-- <a href="" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">Read More</button></a> -->
-                                <a href="" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 mt-4 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Sampaikan Usulan Anda</button></a>
+                                <button type="button" class="px-4 py-sm-3 px-sm-5 mt-4 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight" data-bs-toggle="modal" data-bs-target="#registerModal">Sampaikan Usulan Anda</button>
                             </div>
                         </div>
                     </div>
@@ -566,6 +566,42 @@
         </div>
         <!-- Contact End -->
 
+        <!--Register Modal-->
+        <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h6 class="modal-title" id="registerModalLabel">Silahkan regitrasi untuk menyampaikan usulan anda</h6>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <!-- Add your form or content here -->
+                  <!-- Example Form -->
+                  <form>
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="name" placeholder="Nama Lengkap">
+                    </div>
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="name" placeholder="NIK">
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-control border-0 py-3">
+                            <option value="">Asal Kecamatan</option>
+                            <option value="option1">Pasar Minggu</option>
+                            <option value="option2">Mampang Prapatan</option>
+                            <option value="option3">Kebayoran Baru</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="w-100 form-control border-0 py-3" rows="6" cols="10" placeholder="Alamat Lengkap"></textarea>
+                    </div>
+                    <!-- Add more form fields as needed -->
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
 
         <!-- Footer Start -->
          <div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
